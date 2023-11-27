@@ -1,14 +1,14 @@
 import './App.css';
 import SideBar from './components/sidebar';
 import Landing from './components/landing';
-import AboutMe from './components/aboutme';
+import Skills from './components/skills';
 
 function App() {
   return (
     <div className="App">
         <SideBar />
         <Landing />
-        <AboutMe />
+        <Skills />
     </div>
   );
 }
