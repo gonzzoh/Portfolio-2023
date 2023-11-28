@@ -10,52 +10,113 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/* --------------------------------- sidebar -------------------------------- */
 #sideBar {
   height: 100vh;
   width: 17%;
   position: sticky;
   left: 0;
   top: 0;
-  background-color: lightblue;
+  background-color: rgb(17,20,24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* .imageWrapper {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+} */
 
 .profileImg {
   border-radius: 50%;
-  height: 75%;
-  width: 75%;
+  height: 85%;
+  width: 85%;
+  border: 0.7em solid gray;
 }
 
-.nameTitleContainer {
+.sideBarContent {
   position: absolute;
   margin-top: 40px;
 }
 
+/* .nameTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  color: rgb(254,254,254);
+  font-weight: bold;
+} */
+
 #scrollOptions {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+  margin: 2rem auto;
 }
 
+.sidebarLink {
+  display: block;
+  text-decoration: none;
+  color: rgb(254,254,254);
+  font-size: 1.3rem;
+  margin: 1rem auto;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* ------------------------------ landing page ------------------------------ */
 #landingContainer {
-  background-image: url("images/imagePlaceholder.png");
+  background-image: url("images/sunset.gif");
   height: 100vh;
   width: 83%;
   margin-left: 17%;
   position: absolute;
   top: 0;
   right: 0;
+  left: 0;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* #bio {
+  flex-flow: column;
+  height: 75%;
+  width: 35%;
+  padding: 2em;
+} */
+
+.landingTextWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: rgb(128, 128, 128, 0.57);
+  color: rgb(225, 225, 225);
+} 
+
+#personalInfoContainer {
+  display: flex;
+  flex-direction: row;
+  height: 15em;
+  width: 100%;
+}
+
+/* --------------------------------- skills --------------------------------- */
 #skillsContainer {
   height: 100vh;
   width: 83%;
   margin-left: 17%;
   /* background-image: url("images/aboutmelol.jpg"); */
-  background-color: rgb(70, 73, 75);
+  background-color: rgb(70,73,75);
   display: flex;
   flex-direction: column;
 }
@@ -82,27 +143,7 @@ body {
   width: 13em;
 }
 
-#bio {
-  flex-flow: column;
-  height: 75%;
-  width: 35%;
-  padding: 2em;
-}
+/* -------------------------------- portfolio ------------------------------- */
 
-.textWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-  background-color: rgb(128, 128, 128, 0.57);
-  color: rgb(225, 225, 225, 1);
-} 
 
-#personalInfoContainer {
-  display: flex;
-  flex-direction: row;
-  height: 15em;
-  width: 100%;
-}
+/* --------------------------------- resume --------------------------------- */
